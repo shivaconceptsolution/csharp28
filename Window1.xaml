@@ -1,0 +1,12 @@
+﻿<Window x:Class="WpfAdvanceControl.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="351.943" Width="643.463">
+    <StackPanel>
+        <TextBox Name="txtwidth" ></TextBox>
+        
+        <TextBox Name="txtheight"  ></TextBox>
+
+        <Button Height="{Binding ElementName=txtheight, Path=Text}" Width="{Binding ElementName=txtwidth, Path=Text}">Click</Button>
+    </StackPanel>
+</Window>
